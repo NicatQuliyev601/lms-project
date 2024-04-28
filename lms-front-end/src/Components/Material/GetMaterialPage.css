@@ -1,0 +1,91 @@
+/* Global styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+/* Cube container styles */
+.cube-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap; /* Allow cubes to wrap to the next line */
+    max-width: 100%; /* Prevent container from overflowing */
+    padding: 20px; /* Add some padding around the cubes */
+    box-sizing: border-box; /* Ensure padding doesn't affect width */
+    overflow: hidden; /* Added overflow property */
+
+}
+
+/* Cube group styles */
+.cube-group {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+/* Cube styles */
+.cube {
+    position: relative; /* Set position to relative for absolute positioning of icon */
+    display: flex;
+    flex-direction: column; /* Change to column layout */
+    justify-content: center; /* Center items vertically */
+    align-items: center; /* Center items horizontally */
+    width: 420px; /* Increased width for the cubes */
+    height: 112px; /* Adjust height as needed */
+    background-color: rgba(46, 16, 101, .8);
+    color: #94A3B8;
+    font-size: 18px;
+    font-weight: 500;
+    border-radius: 12px; /* Using rounded-lg */
+    margin: 10px;
+    padding: 24px; /* Using p-6 padding */
+    text-align: center; /* Center text */
+    transition: background-color 0.3s ease;
+    cursor: pointer; /* Adding cursor pointer */
+}
+
+.cube:hover {
+    background-color: #7c3aed; /* Using violet-400 with opacity 90% */
+}
+
+.cube > .cube-icon {
+    position: absolute; /* Set position to absolute */
+    top: 25px; /* Adjust top position as needed */
+    left: 20px; /* Adjust left position as needed */
+    flex-shrink: 0; /* Prevent icon from shrinking */
+}
+
+.cube > .cube-label {
+    font-size: 1.2em;
+    margin-right: 125px;
+}
+
+.cube > .cube-text {
+    font-size: 14px;
+    font-weight: 600;
+    margin-right: 78px;
+}
+
+.navbar-custom.sticky .nav-links-vertical a {
+    color: #fff;
+}
+
+@media (max-width: 768px) {
+    .cube {
+        width: calc(50% - 20px); /* Adjust width for larger screens */
+        /* 50% - 20px allows for two cubes per row with some spacing */
+        /* Adjust 20px to your preferred spacing between cubes */
+    }
+}
+
+@media (min-width: 1024px) {
+    .cube {
+        font-size: 1.125rem;
+        line-height: 1.75rem;
+    }
+}

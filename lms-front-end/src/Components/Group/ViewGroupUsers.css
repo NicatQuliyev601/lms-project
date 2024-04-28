@@ -1,0 +1,50 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.group-users-container {
+    padding: 10px;
+    border-radius: 8px;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    width: 100%;
+    height: 80%;
+}
+
+.users-list-group {
+    list-style-type: none;
+    padding: 0;
+}
+
+.user-item {
+    margin-bottom: 10px;
+}
+
+.user-info {
+    flex-grow: 1;
+}
+
+.teacher, .student {
+    font-weight: bold;
+}
+
+.line-separator {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    border: 0;
+    border-top: 1px solid #ccc;
+}
+
+.list-title {
+    font-weight: bold;
+    color: #007bff;
+    margin-bottom: 5px;
+}
+
+
+
+

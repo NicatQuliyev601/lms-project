@@ -1,0 +1,92 @@
+.manage-users-container {
+    padding: 20px;
+    overflow: hidden; /* Prevent content overflow */
+    min-width: 1000px;
+}
+
+.table-title {
+    margin-bottom: 20px;
+}
+
+.user-form {
+    margin-bottom: 20px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.user-form input,
+.user-form select,
+.user-form button {
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+.table-responsive {
+    overflow-x: auto;
+    max-width: 100%; /* Ensure table doesn't expand beyond container */
+}
+
+.table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.table th,
+.table td {
+    padding: 8px;
+}
+
+.table th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+}
+
+.table-striped tbody tr:nth-child(odd) {
+    background-color: #f9f9f9;
+}
+
+.table-striped tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.btn {
+    padding: 5px 10px;
+    margin-right: 5px;
+    cursor: pointer;
+}
+
+.btn-primary {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+}
+
+.btn-danger {
+    background-color: #dc3545;
+    color: #fff;
+    border: none;
+}
+
+.btn-success {
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+}
+
+.btn-secondary {
+    background-color: #6c757d;
+    color: #fff;
+    border: none;
+}
+
+.btn-secondary:hover {
+    background-color: #495057;
+}
+
+.btn-danger:hover {
+    background-color: #c82333;
+}
+
+.btn-success:hover {
+    background-color: #218838;
+}

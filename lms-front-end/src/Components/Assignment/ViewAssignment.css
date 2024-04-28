@@ -1,0 +1,99 @@
+/* Container styles */
+.view-assignments-container {
+    width: 150vh;
+    height: 80vh;
+    margin: 0 auto;
+}
+
+/* Heading styles */
+.view-assignments-container h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Assignment card styles */
+.assignment-card {
+    background-color: #fff; /* White background */
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.assignment-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+
+/* Assignment details container */
+.assignment-details {
+    display: flex;
+    align-items: center; /* Align items vertically */
+    padding: 15px;
+}
+
+/* SVG icon styles */
+.assignment-details svg {
+    flex-shrink: 0; /* Prevent the icon from shrinking */
+    margin-right: 15px; /* Add spacing between the icon and text */
+}
+
+/* Assignment title styles */
+.assignment-title {
+    font-size: 18px; /* Slightly larger font size */
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+
+.due-date,
+.status {
+    font-size: 14px;
+    color: #777;
+}
+
+/* Submission details section */
+.submission-details {
+    margin-top: 30px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.submission-details h3 {
+    font-size: 20px;
+    margin-bottom: 15px;
+    color: #333;
+    font-family: 'Roboto', sans-serif;
+}
+
+.submission-details p {
+    font-size: 16px;
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+.submission-details button {
+    padding: 12px 24px;
+    background-color: #007bff; /* Blue button */
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    display: block;
+    margin: 20px auto 0;
+}
+
+.submission-details button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
