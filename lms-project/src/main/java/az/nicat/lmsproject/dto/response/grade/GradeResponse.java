@@ -1,7 +1,6 @@
 package az.nicat.lmsproject.dto.response.grade;
 
-import az.code.lmscodeacademy.dto.response.submission.SubmissionResponse;
-import az.code.lmscodeacademy.entity.submission.Submission;
+import az.nicat.lmsproject.dto.response.submission.SubmissionResponse;
 import lombok.Data;
 
 @Data
